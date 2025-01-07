@@ -1,0 +1,2683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dashboardformWidget</class>
+ <widget class="QWidget" name="dashboardformWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1912</width>
+    <height>998</height>
+   </rect>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>39</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QWidget" name="Dashboardmainwidget" native="true">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <widget class="QListWidget" name="dashboardleftpannel_listwidget">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>180</y>
+        <width>261</width>
+        <height>850</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QListWidget {
+    background-color: black;         /* Background color of the entire QListWidget */
+    color: white;                    /* Text color */
+    font-size: 14px;                 /* Font size for the text */
+    border: none;                    /* Remove border */
+    border-radius: 5px;              /* Optional: Rounded corners */
+    padding: 10px;                   /* Padding inside the widget */
+}
+
+QListWidget::item {
+    background-color: transparent;   /* Transparent background for items */
+    padding: 10px;                    /* Padding inside each item */
+    border: 1px solid transparent;    /* No border for unselected items */
+    margin-top: 10px;                  /* Margin between items */
+    margin-bottom: 10px;               /* Margin between items */
+    height: 50px;                     /* Fixed height for each item */
+}
+
+QListWidget::item:selected {
+    background-color: #6A6A6A;       /* Background color when the item is selected */
+    color: white;                    /* Text color when the item is selected */
+    border: 1px solid #FF5722;       /* Border color when selected */
+}
+
+QListWidget::item:hover {
+    background-color: #4B4B4B;       /* Background color on hover */
+    color: white;                    /* Text color on hover */
+}
+
+QListWidget::item:!selected:active {
+    background-color: #1C1C1C;       /* Background color when an item is clicked but not selected */
+}
+
+/* Optional: Customize the scrollbar */
+QScrollBar:vertical {
+    width: 10px;
+    background: #333333;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical {
+    background: #FF5722;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #FF7043;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0;
+    background: transparent;
+}
+</string>
+      </property>
+      <property name="resizeMode">
+       <enum>QListView::Fixed</enum>
+      </property>
+      <property name="viewMode">
+       <enum>QListView::ListMode</enum>
+      </property>
+      <property name="currentRow">
+       <number>-1</number>
+      </property>
+      <property name="sortingEnabled">
+       <bool>false</bool>
+      </property>
+      <item>
+       <property name="text">
+        <string>HOME</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Student</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Teacher</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Courses</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </item>
+     </widget>
+     <widget class="QWidget" name="dashboarleftside_pannelwidget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>261</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <widget class="QLabel" name="dashboardlogo_label">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>10</y>
+         <width>141</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../../logos/school logo.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="dashboardTitle_label">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>110</y>
+         <width>191</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>School Management</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="admindashboard">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>0</y>
+        <width>1600</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:black;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>Admin DashBoard</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="totalstudent_label">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>100</y>
+        <width>301</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:blue;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>&lt;p style=&quot;font-size: 20px; font-weight: bold;  margin-right:20px;&quot;&gt;150&lt;/p&gt;
+&lt;p style=&quot;font-size: 14px;&quot;&gt;Total Students&lt;/p&gt;
+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="totalteacher_label">
+      <property name="geometry">
+       <rect>
+        <x>830</x>
+        <y>100</y>
+        <width>301</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:red;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>&lt;p style=&quot;font-size: 20px; font-weight: bold;  margin-right:20px;&quot;&gt;20&lt;/p&gt;
+&lt;p style=&quot;font-size: 14px;&quot;&gt;Total Teachers&lt;/p&gt;
+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="totalcourses_label">
+      <property name="geometry">
+       <rect>
+        <x>1310</x>
+        <y>100</y>
+        <width>261</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:orange;
+</string>
+      </property>
+      <property name="text">
+       <string>&lt;p style=&quot;font-size: 20px; font-weight: bold;  margin-right:20px;&quot;&gt;100&lt;/p&gt;
+&lt;p style=&quot;font-size: 14px;&quot;&gt;Total Courses&lt;/p&gt;
+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="clock_label">
+      <property name="geometry">
+       <rect>
+        <x>1620</x>
+        <y>120</y>
+        <width>211</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <widget class="QStackedWidget" name="rightpannel_content_stackwidget">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>230</y>
+        <width>1491</width>
+        <height>731</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="Homepage">
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>-120</x>
+          <y>30</y>
+          <width>1551</width>
+          <height>621</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../../../logos/dashboard image.jpg</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>680</y>
+          <width>631</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Made by Ritik Garg, referenced by Rahul Bansal</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="Students">
+       <widget class="QTableWidget" name="studentdata_tableWidget">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>30</y>
+          <width>991</width>
+          <height>301</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderStretchLastSection">
+         <bool>false</bool>
+        </attribute>
+       </widget>
+       <widget class="QLabel" name="studentid_label">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>340</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Student Id</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="studentname_label">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>390</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Student Name</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="studentclass_label">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>440</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Student class</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="studentrollnumber_label">
+        <property name="geometry">
+         <rect>
+          <x>560</x>
+          <y>340</y>
+          <width>161</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Student Roll Number</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="studentgender_label">
+        <property name="geometry">
+         <rect>
+          <x>560</x>
+          <y>390</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Student Gender</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="studentaddress_label">
+        <property name="geometry">
+         <rect>
+          <x>560</x>
+          <y>440</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Student Address</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="studentgrade_label">
+        <property name="geometry">
+         <rect>
+          <x>1110</x>
+          <y>390</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Student Grade</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="studentid_lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>340</y>
+          <width>113</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="studentname_lineEdit_2">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>390</y>
+          <width>113</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="studentclass_lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>440</y>
+          <width>113</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="studentrollnumber_lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>810</x>
+          <y>340</y>
+          <width>113</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="studentaddress_lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>810</x>
+          <y>440</y>
+          <width>113</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="studentgrade_lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>1300</x>
+          <y>390</y>
+          <width>113</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="studentgender_comboBox">
+        <property name="geometry">
+         <rect>
+          <x>810</x>
+          <y>390</y>
+          <width>73</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>Male</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Female</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="add_button">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>500</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Add</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="update_button">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>500</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Update</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="delete_button">
+        <property name="geometry">
+         <rect>
+          <x>680</x>
+          <y>500</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Delete</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="find_button">
+        <property name="geometry">
+         <rect>
+          <x>1030</x>
+          <y>500</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Find</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="Teachers">
+       <widget class="QLabel" name="teacherid_label">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>330</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Teacher Id</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="teacherid_lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>340</y>
+          <width>113</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="teachername_label">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>400</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Teacher Name</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="teachercourse_lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>470</y>
+          <width>113</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="teachercourse_label">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>470</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Teacher Course</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="teachername_lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>410</y>
+          <width>113</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="teachergrade_label">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>330</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Teacher Grade</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="teacheremail_label">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>400</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Teacher Email</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="teacherphoneno_label">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>470</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Teacher PhoneNo</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="teachergender_comboBox">
+        <property name="geometry">
+         <rect>
+          <x>1250</x>
+          <y>410</y>
+          <width>73</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>Male</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Female</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="teachergrade_label_2">
+        <property name="geometry">
+         <rect>
+          <x>1060</x>
+          <y>400</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Teacher Gender</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="teachergrade_lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>820</x>
+          <y>340</y>
+          <width>113</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="teacheremail_lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>820</x>
+          <y>410</y>
+          <width>113</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="teacherphoneno_lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>820</x>
+          <y>480</y>
+          <width>113</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="teacher_add_button">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>570</y>
+          <width>93</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Add</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="teacher_update_button">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>570</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Update</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="teacher_delete_button">
+        <property name="geometry">
+         <rect>
+          <x>770</x>
+          <y>570</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Delete</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="teacher_find_button">
+        <property name="geometry">
+         <rect>
+          <x>1050</x>
+          <y>570</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Find</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="teachertable_widget">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>20</y>
+          <width>1111</width>
+          <height>281</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="Courses">
+       <widget class="QTableWidget" name="coursetable_widget">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>40</y>
+          <width>511</width>
+          <height>371</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="courseid_label">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>480</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Course ID</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="coursename_label">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>550</y>
+          <width>101</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Course Name</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="courseassign_label">
+        <property name="geometry">
+         <rect>
+          <x>750</x>
+          <y>500</y>
+          <width>201</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Course Assign Teacher Id</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="courseid_lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>480</y>
+          <width>113</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="coursename_lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>550</y>
+          <width>113</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="courseassign_lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>1010</x>
+          <y>490</y>
+          <width>113</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="course_add_button">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>620</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>ADD</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="course_update_button">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>620</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Update</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="course_delete_button">
+        <property name="geometry">
+         <rect>
+          <x>770</x>
+          <y>620</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Delete</string>
+        </property>
+       </widget>
+       <widget class="QStackedWidget" name="rightpannel_content_stackwidget_2">
+        <property name="geometry">
+         <rect>
+          <x>1220</x>
+          <y>340</y>
+          <width>1501</width>
+          <height>691</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>3</number>
+        </property>
+        <widget class="QWidget" name="Homepage_2">
+         <widget class="QLabel" name="label_2">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>120</y>
+            <width>301</width>
+            <height>141</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Home page </string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="Students_2">
+         <widget class="QTableWidget" name="studentdata_tableWidget_2">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>0</y>
+            <width>991</width>
+            <height>301</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderStretchLastSection">
+           <bool>false</bool>
+          </attribute>
+         </widget>
+         <widget class="QLabel" name="studentid_label_2">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>340</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Student Id</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="studentname_label_2">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>390</y>
+            <width>111</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Student Name</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="studentclass_label_2">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>440</y>
+            <width>111</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Student class</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="studentrollnumber_label_2">
+          <property name="geometry">
+           <rect>
+            <x>560</x>
+            <y>340</y>
+            <width>161</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Student Roll Number</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="studentgender_label_2">
+          <property name="geometry">
+           <rect>
+            <x>560</x>
+            <y>390</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Student Gender</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="studentaddress_label_2">
+          <property name="geometry">
+           <rect>
+            <x>560</x>
+            <y>440</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Student Address</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="studentgrade_label_2">
+          <property name="geometry">
+           <rect>
+            <x>1110</x>
+            <y>390</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Student Grade</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="studentid_lineEdit_2">
+          <property name="geometry">
+           <rect>
+            <x>220</x>
+            <y>340</y>
+            <width>113</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="studentname_lineEdit_3">
+          <property name="geometry">
+           <rect>
+            <x>220</x>
+            <y>390</y>
+            <width>113</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="studentclass_lineEdit_2">
+          <property name="geometry">
+           <rect>
+            <x>220</x>
+            <y>440</y>
+            <width>113</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="studentrollnumber_lineEdit_2">
+          <property name="geometry">
+           <rect>
+            <x>810</x>
+            <y>340</y>
+            <width>113</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="studentaddress_lineEdit_2">
+          <property name="geometry">
+           <rect>
+            <x>810</x>
+            <y>440</y>
+            <width>113</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="studentgrade_lineEdit_2">
+          <property name="geometry">
+           <rect>
+            <x>1300</x>
+            <y>390</y>
+            <width>113</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="studentgender_comboBox_2">
+          <property name="geometry">
+           <rect>
+            <x>810</x>
+            <y>390</y>
+            <width>73</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <item>
+           <property name="text">
+            <string>Male</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Female</string>
+           </property>
+          </item>
+         </widget>
+         <widget class="QPushButton" name="add_button_2">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>500</y>
+            <width>93</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Add</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="update_button_2">
+          <property name="geometry">
+           <rect>
+            <x>390</x>
+            <y>500</y>
+            <width>93</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Update</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="delete_button_2">
+          <property name="geometry">
+           <rect>
+            <x>680</x>
+            <y>500</y>
+            <width>93</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Delete</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="find_button_2">
+          <property name="geometry">
+           <rect>
+            <x>1030</x>
+            <y>500</y>
+            <width>93</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Find</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="Teachers_2">
+         <widget class="QLabel" name="teacherid_label_2">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>330</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Teacher Id</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="teacherid_lineEdit_2">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>340</y>
+            <width>113</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="teachername_label_2">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>400</y>
+            <width>111</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Teacher Name</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="teachercourse_lineEdit_2">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>470</y>
+            <width>113</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="teachercourse_label_2">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>470</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Teacher Course</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="teachername_lineEdit_2">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>410</y>
+            <width>113</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="teachergrade_label_3">
+          <property name="geometry">
+           <rect>
+            <x>620</x>
+            <y>330</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Teacher Grade</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="teacheremail_label_2">
+          <property name="geometry">
+           <rect>
+            <x>620</x>
+            <y>400</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Teacher Email</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="teacherphoneno_label_2">
+          <property name="geometry">
+           <rect>
+            <x>620</x>
+            <y>470</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Teacher PhoneNo</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="teachergender_comboBox_2">
+          <property name="geometry">
+           <rect>
+            <x>1250</x>
+            <y>410</y>
+            <width>73</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <item>
+           <property name="text">
+            <string>Male</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Female</string>
+           </property>
+          </item>
+         </widget>
+         <widget class="QLabel" name="teachergrade_label_4">
+          <property name="geometry">
+           <rect>
+            <x>1060</x>
+            <y>400</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Teacher Gender</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="teachergrade_lineEdit_2">
+          <property name="geometry">
+           <rect>
+            <x>820</x>
+            <y>340</y>
+            <width>113</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="teacheremail_lineEdit_2">
+          <property name="geometry">
+           <rect>
+            <x>820</x>
+            <y>410</y>
+            <width>113</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="teacherphoneno_lineEdit_2">
+          <property name="geometry">
+           <rect>
+            <x>820</x>
+            <y>480</y>
+            <width>113</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="teacher_add_button_2">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>570</y>
+            <width>93</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Add</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="teacher_update_button_2">
+          <property name="geometry">
+           <rect>
+            <x>470</x>
+            <y>570</y>
+            <width>93</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Update</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="teacher_delete_button_2">
+          <property name="geometry">
+           <rect>
+            <x>770</x>
+            <y>570</y>
+            <width>93</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Delete</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="teacher_find_button_2">
+          <property name="geometry">
+           <rect>
+            <x>1050</x>
+            <y>570</y>
+            <width>93</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Find</string>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="teachertable_widget_2">
+          <property name="geometry">
+           <rect>
+            <x>280</x>
+            <y>0</y>
+            <width>1111</width>
+            <height>301</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="Courses_2">
+         <widget class="QLabel" name="courseid_label_2">
+          <property name="geometry">
+           <rect>
+            <x>320</x>
+            <y>480</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Course ID</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="coursename_label_2">
+          <property name="geometry">
+           <rect>
+            <x>320</x>
+            <y>550</y>
+            <width>101</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Course Name</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="courseassign_label_2">
+          <property name="geometry">
+           <rect>
+            <x>750</x>
+            <y>500</y>
+            <width>201</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Course Assign Teacher Id</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="courseid_lineEdit_2">
+          <property name="geometry">
+           <rect>
+            <x>510</x>
+            <y>480</y>
+            <width>113</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="coursename_lineEdit_2">
+          <property name="geometry">
+           <rect>
+            <x>510</x>
+            <y>550</y>
+            <width>113</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="courseassign_lineEdit_2">
+          <property name="geometry">
+           <rect>
+            <x>1010</x>
+            <y>490</y>
+            <width>113</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_5">
+          <property name="geometry">
+           <rect>
+            <x>330</x>
+            <y>620</y>
+            <width>93</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>ADD</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_6">
+          <property name="geometry">
+           <rect>
+            <x>550</x>
+            <y>620</y>
+            <width>93</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Update</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_7">
+          <property name="geometry">
+           <rect>
+            <x>830</x>
+            <y>620</y>
+            <width>93</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Delete</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QStackedWidget" name="rightpannel_content_stackwidget_3">
+        <property name="geometry">
+         <rect>
+          <x>990</x>
+          <y>570</y>
+          <width>1521</width>
+          <height>681</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>3</number>
+        </property>
+        <widget class="QWidget" name="Homepage_3">
+         <widget class="QLabel" name="label_3">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>120</y>
+            <width>301</width>
+            <height>141</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Home page </string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="Students_3">
+         <widget class="QTableWidget" name="studentdata_tableWidget_3">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>0</y>
+            <width>991</width>
+            <height>301</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderStretchLastSection">
+           <bool>false</bool>
+          </attribute>
+         </widget>
+         <widget class="QLabel" name="studentid_label_3">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>340</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Student Id</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="studentname_label_3">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>390</y>
+            <width>111</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Student Name</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="studentclass_label_3">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>440</y>
+            <width>111</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Student class</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="studentrollnumber_label_3">
+          <property name="geometry">
+           <rect>
+            <x>560</x>
+            <y>340</y>
+            <width>161</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Student Roll Number</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="studentgender_label_3">
+          <property name="geometry">
+           <rect>
+            <x>560</x>
+            <y>390</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Student Gender</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="studentaddress_label_3">
+          <property name="geometry">
+           <rect>
+            <x>560</x>
+            <y>440</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Student Address</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="studentgrade_label_3">
+          <property name="geometry">
+           <rect>
+            <x>1110</x>
+            <y>390</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Student Grade</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="studentid_lineEdit_3">
+          <property name="geometry">
+           <rect>
+            <x>220</x>
+            <y>340</y>
+            <width>113</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="studentname_lineEdit_4">
+          <property name="geometry">
+           <rect>
+            <x>220</x>
+            <y>390</y>
+            <width>113</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="studentclass_lineEdit_3">
+          <property name="geometry">
+           <rect>
+            <x>220</x>
+            <y>440</y>
+            <width>113</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="studentrollnumber_lineEdit_3">
+          <property name="geometry">
+           <rect>
+            <x>810</x>
+            <y>340</y>
+            <width>113</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="studentaddress_lineEdit_3">
+          <property name="geometry">
+           <rect>
+            <x>810</x>
+            <y>440</y>
+            <width>113</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="studentgrade_lineEdit_3">
+          <property name="geometry">
+           <rect>
+            <x>1300</x>
+            <y>390</y>
+            <width>113</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="studentgender_comboBox_3">
+          <property name="geometry">
+           <rect>
+            <x>810</x>
+            <y>390</y>
+            <width>73</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <item>
+           <property name="text">
+            <string>Male</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Female</string>
+           </property>
+          </item>
+         </widget>
+         <widget class="QPushButton" name="add_button_3">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>500</y>
+            <width>93</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Add</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="update_button_3">
+          <property name="geometry">
+           <rect>
+            <x>390</x>
+            <y>500</y>
+            <width>93</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Update</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="delete_button_3">
+          <property name="geometry">
+           <rect>
+            <x>680</x>
+            <y>500</y>
+            <width>93</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Delete</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="find_button_3">
+          <property name="geometry">
+           <rect>
+            <x>1030</x>
+            <y>500</y>
+            <width>93</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Find</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="Teachers_3">
+         <widget class="QLabel" name="teacherid_label_3">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>330</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Teacher Id</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="teacherid_lineEdit_3">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>340</y>
+            <width>113</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="teachername_label_3">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>400</y>
+            <width>111</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Teacher Name</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="teachercourse_lineEdit_3">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>470</y>
+            <width>113</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="teachercourse_label_3">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>470</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Teacher Course</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="teachername_lineEdit_3">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>410</y>
+            <width>113</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="teachergrade_label_5">
+          <property name="geometry">
+           <rect>
+            <x>620</x>
+            <y>330</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Teacher Grade</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="teacheremail_label_3">
+          <property name="geometry">
+           <rect>
+            <x>620</x>
+            <y>400</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Teacher Email</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="teacherphoneno_label_3">
+          <property name="geometry">
+           <rect>
+            <x>620</x>
+            <y>470</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Teacher PhoneNo</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="teachergender_comboBox_3">
+          <property name="geometry">
+           <rect>
+            <x>1250</x>
+            <y>410</y>
+            <width>73</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <item>
+           <property name="text">
+            <string>Male</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Female</string>
+           </property>
+          </item>
+         </widget>
+         <widget class="QLabel" name="teachergrade_label_6">
+          <property name="geometry">
+           <rect>
+            <x>1060</x>
+            <y>400</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Teacher Gender</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="teachergrade_lineEdit_3">
+          <property name="geometry">
+           <rect>
+            <x>820</x>
+            <y>340</y>
+            <width>113</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="teacheremail_lineEdit_3">
+          <property name="geometry">
+           <rect>
+            <x>820</x>
+            <y>410</y>
+            <width>113</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="teacherphoneno_lineEdit_3">
+          <property name="geometry">
+           <rect>
+            <x>820</x>
+            <y>480</y>
+            <width>113</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="teacher_add_button_3">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>570</y>
+            <width>93</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Add</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="teacher_update_button_3">
+          <property name="geometry">
+           <rect>
+            <x>470</x>
+            <y>570</y>
+            <width>93</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Update</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="teacher_delete_button_3">
+          <property name="geometry">
+           <rect>
+            <x>770</x>
+            <y>570</y>
+            <width>93</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Delete</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="teacher_find_button_3">
+          <property name="geometry">
+           <rect>
+            <x>1050</x>
+            <y>570</y>
+            <width>93</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Find</string>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="teachertable_widget_3">
+          <property name="geometry">
+           <rect>
+            <x>280</x>
+            <y>0</y>
+            <width>1111</width>
+            <height>301</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="Courses_3">
+         <widget class="QLabel" name="courseid_label_3">
+          <property name="geometry">
+           <rect>
+            <x>320</x>
+            <y>480</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Course ID</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="coursename_label_3">
+          <property name="geometry">
+           <rect>
+            <x>320</x>
+            <y>550</y>
+            <width>101</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Course Name</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="courseassign_label_3">
+          <property name="geometry">
+           <rect>
+            <x>750</x>
+            <y>500</y>
+            <width>201</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Course Assign Teacher Id</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="courseid_lineEdit_3">
+          <property name="geometry">
+           <rect>
+            <x>510</x>
+            <y>480</y>
+            <width>113</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="coursename_lineEdit_3">
+          <property name="geometry">
+           <rect>
+            <x>510</x>
+            <y>550</y>
+            <width>113</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="courseassign_lineEdit_3">
+          <property name="geometry">
+           <rect>
+            <x>1010</x>
+            <y>490</y>
+            <width>113</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_8">
+          <property name="geometry">
+           <rect>
+            <x>330</x>
+            <y>620</y>
+            <width>93</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>ADD</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_9">
+          <property name="geometry">
+           <rect>
+            <x>550</x>
+            <y>620</y>
+            <width>93</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Update</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_10">
+          <property name="geometry">
+           <rect>
+            <x>830</x>
+            <y>620</y>
+            <width>93</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Delete</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QPushButton" name="course_find_button">
+        <property name="geometry">
+         <rect>
+          <x>970</x>
+          <y>620</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Find</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="logout_button">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>910</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Logout</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
